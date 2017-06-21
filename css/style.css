@@ -90,7 +90,7 @@ h3 {
 	text-transform:uppercase;
 }
 
-p {
+p, .regular {
 	color:#595754;
 	font-family:"Brandon Grotesque Regular", sans-serif;
 	font-size:17px;
@@ -103,7 +103,7 @@ p {
 	text-align:center;
 }
 
-.menu-text {
+.menu-text, .bold {
 	font-family: BrandonGrotesqueWeb-Bold;
 	font-weight: normal;
 	font-style: normal;
@@ -112,7 +112,7 @@ p {
 /* ------ HEADER ------- */
 
 .logo {
-  top: 25px;
+  top: 30px;
   position: absolute;
   left: 20px;
 }
@@ -121,16 +121,31 @@ p {
   max-width: 400px;
 }
 
+img.logo-menu {
+	max-width: 130px;
+	margin-top: 40px;
+	margin-bottom: 70px;
+	margin-right: -111px;
+}
+
 .stay-updated {
-  bottom: 10px;
+  bottom: 20px;
   position: absolute;
-  left: 10px;
+  left: 20px;
 }
 
 .social {
-  bottom: 10px;
+  bottom: 20px;
   position: absolute;
-  right: 10px;
+  right: 20px;
+}
+
+.social a {
+	padding-right: 5px;
+}
+
+.social a:last-child {
+	padding: 0;
 }
 
 .b-a, .bar, .bar:before, .bar:after {
@@ -172,24 +187,33 @@ p {
 .bar {
   position: fixed;
   right: 17px;
-  top: 43px;
+  top: 48px;
 }
 .bar:before {
   top: -15px;
 }
+
 .bar:after {
   top: 15px;
+}
+
+.menu-expanded .bar-bg {
+	width: 107px;
+	height: 93px;
+	float: right;
+	background-color: #D5D4D4;
 }
 
 .b-a-expanded, .menu-expanded .bar:before, .menu-expanded .bar:after {
   transition: all .25s;
   top: -0px;
+	background-color: #585653;
+	height: 2px;
 }
 
 .menu-expanded {
   transition: all .25s;
   text-align: center;
-  line-height: 200px;
   height: 100%;
   width: 100%;
   border-radius: 0px;
@@ -200,6 +224,8 @@ p {
 .menu-expanded ul {
   transition: all 0s;
   position: relative;
+	list-style: none;
+	padding-left: 0;
   left: 0;
   z-index: 2;
 }
@@ -231,6 +257,12 @@ p {
 
 .menu-text {
   margin-top: 30px;
+}
+
+p.seperator {
+	font-family: BrandonGrotesqueWeb-Bold;
+	font-size: 30px;
+	color: #e8e0d4;
 }
 
 .row {
@@ -275,11 +307,18 @@ div.full-screen-bg {
 	max-width: 250px;
 }
 
+.scroll-down {
+	text-align: center;
+}
+
+.scroll-down img {
+	max-width: 22px;
+	margin-top: -95px;
+}
+
 .social img {
 	max-width: 40px;
 }
-
-/* ------ Full screen bg ------- */
 
 .title h1.centered {
   width: 100%;
@@ -290,6 +329,43 @@ div.full-screen-bg {
   padding: 0;
 }
 
+/* ------ FILTERS ------- */
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: #595754;         /* adjust as needed */
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    /*content: "\e080";    /* adjust as needed, taken from bootstrap.css */*/
+}
+
+.panel-group .panel {
+	border-radius: 0;
+}
+
+.panel-default {
+	border-color:#D5D4D4;
+}
+
+.panel-default>.panel-heading {
+	background-color:#D5D4D4;
+}
+
+.panel-heading {
+	padding:15px 11px 8px 15px;
+}
+
+.panel {
+	margin-bottom:10px !important
+}
+
+/* ------ products ------- */
+
 .product {
   position: relative;
 }
@@ -297,12 +373,50 @@ div.full-screen-bg {
 .product-info {
   position: absolute;
   top: 0;
+	background-color: rgba(252, 251, 250, 0.8);
+	margin-left:15px;
+	text-align: center;
+	width: 40%;
+}
+
+.product-info h2 {
+	margin-bottom: -2px;
+}
+
+.product-info p {
+	margin-bottom: 15px;
+}
+
+.product-info a {
+	color:#595754;
 }
 
 /*========== BOTTLE SHOP ==========*/
 
 .filters {
       clear: both;
+}
+
+/* ------ FOOTER ------- */
+
+footer {
+	background: #585653;
+	color: #E8E0D3;
+	text-align: center;
+	padding: 35px;
+}
+
+footer a, footer h3 {
+	color: #E8E0D3;
+	text-align: center;
+}
+
+footer img {
+	max-width: 25px;
+}
+
+address {
+	margin-bottom: 0;
 }
 
 /*==========  MEDIA QUERIES ==========*/

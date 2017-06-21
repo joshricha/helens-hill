@@ -76,18 +76,22 @@
       <img src="img/logo.png" alt="Helen's Hill logo">
     </div><!-- logo -->
     <div class="menu-collapsed">
-       <div class="bar">
-         <p class="menu-text">MENU</p>
-       </div><!-- menu collapsed -->
+       <div class="bar-bg">
+         <div class="bar">
+           <p class="menu-text">MENU</p>
+         </div><!-- menu collapsed -->
+       </div><!-- bar bg -->
        <nav>
           <ul>
+            <li><img class="logo-menu" src="img/shield.png" alt="Logo"></li>
              <li><a href="#">Home</a></li>
              <li><a href="#">About</a></li>
              <li><a href="#">Clients</a></li>
+             <li><p class="seperator">-</p></li>
              <li><a href="#">Contact Us</a></li>
           </ul>
        </nav>
-    </div>
+    </div><!-- meny collapsed -->
   </header>
 
   <div class="title">
@@ -97,6 +101,9 @@
   <div class="stay-updated">
     <a href="#"><img src="img/banner-stayupdated.png" alt="Stay updated"></a>
   </div><!-- stay updated -->
+  <div class="scroll-down">
+    <a href=""><img src="img/scroll.png" alt="Scroll"></a>
+  </div><!-- scroll down -->
   <div class="social">
     <a href=""><img src="img/banner-wineclub.png" alt=""></a>
     <a href=""><img src="img/banner-shop.png" alt=""></a>
@@ -106,86 +113,91 @@
     <a href=""><img src="img/banner-twitter.png" alt=""></a>
     <a href=""><img src="img/banner-youtube.png" alt=""></a>
   </div><!-- social -->
-  <div class="container">
+  <div class="container section-split">
     <div class="filters">
       <div class="col-md-4">
         <div class="panel-group" id="accordion">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                Collapsible Group 1</a>
+                <a class="accordion-toggle bold" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    CATEGORIES
+                </a>
               </h4>
             </div>
-            <div id="collapse1" class="panel-collapse collapse">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat.</div>
+            <div id="collapseOne" class="panel-collapse collapse">
+              <div class="panel-body">
+                Lorem
+              </div>
             </div>
-          </div>
+          </div><!-- acc panel -->
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                Collapsible Group 2</a>
+                <a class="accordion-toggle bold" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  OFFERS
+                </a>
               </h4>
             </div>
-            <div id="collapse2" class="panel-collapse collapse">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat.</div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                Lorem
+              </div>
             </div>
-          </div><!-- panel -->
-        </div> <!-- accordin -->
+          </div><!-- acc panel -->
+        </div><!-- accordin -->
       </div><!-- col 4 -->
     </div><!-- filters -->
     <div class="product-list">
       <div class="product col-md-8">
         <img src="http://via.placeholder.com/760x300" alt="">
         <div class="product-info">
-          <h2>EN VIE SPARKLING BLANC DE NOIR</h2>
+          <h2>EN VIE <br>SPARKLING <br>BLANC DE NOIR</h2>
           <p class="price">$20.00</p>
           <a href="">The Story Behind the Wine &#62;</a><br>
           <a href="">Tasting Notes &#62;</a><br>
           <a href="">Wine Making &#62;</a><br>
           <a href="">Technical Information &#62;</a>
-          <p><a href="">More Info &#62;</a> | <a href="">Buy &#62;</a></p>
+          <p><a class="bold" href="">More Info &#62;</a> | <a class="bold" href="">Buy &#62;</a></p>
         </div><!-- product info -->
       </div><!-- product -->
     </div><!-- product list -->
   </div><!-- container -->
 
-  <footer class="container">
-    <div class="col-md-3">
-      <a href="">The Cellar Door</a><br>
-      <a href="">The Bottleshop</a><br>
-      <a href="">The Wine Club</a>
-    </div><!-- col3 -->
-    <div class="col-md-3">
-      <a href="">Stockists</a>
-      <a href="">News From The Hill </a>
-      <a href="">The Helen’s Hill Story Contact</a>
-      <a href="">The Restaurant</a>
-    </div>
-    <div class="col-md-3">
-      <a href="">Shopping Cart</a>
-      <a href="">Login</a>
-    </div><!-- col3 -->
-    <div class="col-md-3">
-      <h3>CONTACT</h3>
-      <a href="tel:+61 3 9739 1573">+61 3 9739 1573</a>
-      <a href="mailto:info@helenshill.com.au">info@helenshill.com.au</a>
-      <address class="">
-        16 Ingram Road, Coldstream, Victoria 3770 Australia
-      </address>
-      <h3>STAY CONNECTED</h3>
-      <p>logos</p>
-    </div><!-- col3 -->
-    <div class="col-md-3">
+  <footer>
+    <div class="container">
+      <div class="col-md-3">
+        <a href="">The Cellar Door</a><br>
+        <a href="">The Bottleshop</a><br>
+        <a href="">The Wine Club</a>
+      </div><!-- col3 -->
+      <div class="col-md-3">
+        <a href="">Stockists</a><br>
+        <a href="">News From The Hill </a><br>
+        <a href="">The Helen’s Hill Story Contact</a><br>
+        <a href="">The Restaurant</a>
+      </div>
+      <div class="col-md-3">
+        <a href="">Shopping Cart</a><br>
+        <a href="">Login</a>
+      </div><!-- col3 -->
+      <div class="col-md-3">
+        <h3>CONTACT</h3>
+        <a href="tel:+61 3 9739 1573">+61 3 9739 1573</a><br>
+        <a href="mailto:info@helenshill.com.au">info@helenshill.com.au</a><br>
+        <address class="">
+          16 Ingram Road, Coldstream, Victoria 3770 Australia
+        </address><br>
+        <h3>STAY CONNECTED</h3>
+        <a href=""><img src="img/facebook.png" alt=""></a>
+        <a href=""><img src="img/twitter.png" alt=""></a>
+        <a href=""><img src="img/youtube.png" alt=""></a>
+        <a href=""><img src="img/email.png" alt=""></a>
+      </div><!-- col3 -->
+      <div class="col-md-3">
 
-    </div><!-- col3 -->
+      </div><!-- col3 -->
+    </div><!-- container -->
   </footer>
 
 
