@@ -48,6 +48,61 @@ p {
 	font-style: normal;
 }
 
+
+
+h1 {
+	color:#e8e0d4;
+	font-size:60px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:500;
+	line-height:1.2;
+	margin-bottom:10px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+h2 {
+	color:#595754;
+	font-size:25px;
+	font-weight:500;
+	line-height:1.2;
+	margin-bottom:20px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:10px;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+h3 {
+	color:#595754;
+	font-size:16px;
+	line-height:1.25;
+	margin-bottom:10px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:10px;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+p {
+	color:#595754;
+	font-family:"Brandon Grotesque Regular", sans-serif;
+	font-size:17px;
+	font-weight:300;
+	line-height:1.235;
+	margin-bottom:10px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	text-align:center;
+}
+
 .menu-text {
 	font-family: BrandonGrotesqueWeb-Bold;
 	font-weight: normal;
@@ -214,6 +269,14 @@ div.full-screen-bg {
 
 .bg-img-6 {
   background: url(http://via.placeholder.com/500x500);
+}
+
+.stay-updated img {
+	max-width: 250px;
+}
+
+.social img {
+	max-width: 40px;
 }
 
 /* ------ Full screen bg ------- */
