@@ -108,6 +108,14 @@ a:focus, a:hover {
 	text-decoration: none;
 }
 
+div:focus {
+	outline: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
 /* ------ HEADER ------- */
 
 .logo {
@@ -265,8 +273,24 @@ p.seperator {
 	color: #e8e0d4;
 }
 
-.row {
-  padding-top: 150px;
+.header-wrap {
+	height: 60%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+
+.header-image {
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+
+.header-image  h1.centered {
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 }
 
 /* ------ FULL SCREEN BG ------- */
@@ -360,6 +384,16 @@ div.full-screen-bg {
 	background-color:#D5D4D4;
 }
 
+.sort-by.panel-default>.panel-heading {
+	background-color:#fff;
+	border: 1px solid #D5D4D4;
+}
+
+.sort-by.panel-default {
+	width: 60%;
+	float: left;
+}
+
 .panel-default>.panel-heading+.panel-collapse>.panel-body {
 	background-color:#D5D4D4;
 	border-top: 3px solid #fff;
@@ -447,6 +481,19 @@ div.full-screen-bg {
  color: #4778d9;
 }
 
+.display-prod-full, .display-prod-split {
+	width: 16%;
+	height: 42px;
+	background: #D5D4D4;
+	display: block;
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.display-prod-full {
+	margin-right: 0;
+}
 
 /* ------ products ------- */
 
@@ -462,7 +509,7 @@ div.full-screen-bg {
 	background-color: rgba(252, 251, 250, 0.8);
 	margin-left:15px;
 	text-align: center;
-	width: 40%;
+	width: 36%;
 }
 
 .product-info:hover {
@@ -492,6 +539,99 @@ div.full-screen-bg {
 .cart-display {
 	display: none;
 }
+
+.buy-display {
+	display: none;
+}
+
+.buy-form {
+	position: absolute;
+  bottom: 20px;
+  margin-left: 15px;
+  width: 32%;
+	margin-left: 30px;
+}
+
+.buy-form button.btn {
+	background: white;
+	border-radius: 0;
+	border: 2px solid #595754;
+}
+
+.buy-form glyphicon {
+	padding-top: 3px;
+}
+
+.buy-form input {
+	border-radius: 0;
+	background: white;
+	border-radius: 0;
+	border: 2px solid #595754;
+	text-align: center;
+	font-family: BrandonGrotesqueWeb-Bold;
+	display: inline-block;
+	width: 50%;
+	padding: 12px 0 8px 0px;
+	font-size: 14px;
+}
+
+.buy-form .btn {
+		padding: 12px 14px 8px 14px;
+}
+
+input#quantity {
+	width: 94%;
+	padding: 23px 0 18px 0;
+	font-size: 17px;
+}
+
+.add-to-cart {
+	margin-top: 10px;
+	margin-bottom: -2px;
+	margin-right: -5px;
+}
+
+input.add-to-cart , input.add-case {
+	background:#595754;
+	color: #E8E0D3;
+	border: 2px solid #E8E0D3;
+}
+
+.product-list-squares {
+	display: none;
+}
+
+.square-product {
+	width: 171px;
+	height: 171px;
+	display: table;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	background-size: cover;
+}
+
+.last {
+	margin-right:0;
+}
+
+.square-product h2 {
+	display: none;
+	font-size: 16px;
+	vertical-align: middle;
+	text-align: center;
+	opacity: 0;
+}
+
+.square-product:hover h2 {
+	display: table-cell;
+	opacity: 1;
+	transition: opacity 0.4s ease-out, display 0.4s step-start;
+	-ms-transition: opacity 0.4s ease-out, display 0.4s step-start;
+	-moz-transition: opacity 0.4s ease-out, display 0.4s step-start;
+	-webkit-transition: opacity 0.4s ease-out, display 0.4s step-start;
+}
+
+
 
 /*========== BOTTLE SHOP ==========*/
 
@@ -526,12 +666,25 @@ address {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
-
+	.square-product {
+    width: 137px;
+		height: 137px;
+	}
 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+
+	.square-product {
+    width: 337px;
+		height: 337px;
+		background-size: 337px;
+	}
+
+	.second-square {
+		margin-right: 0 !important;
+	}
 
 }
 
@@ -564,7 +717,41 @@ address {
 		line-height:1.267;
 	}
 
+	.buy-form input {
+		border-radius: 0;
+		background: white;
+		border-radius: 0;
+		border: 2px solid #595754;
+		text-align: center;
+		font-family: BrandonGrotesqueWeb-Bold;
+		display: block;
+		width: 100%;
+		padding: 12px 0 8px 0px;
+	}
 
+	.square-product {
+	   background-size: 100% auto;
+		 width: 44.4vw;
+     height: 44.4vw;
+	}
+
+}
+
+@media only screen and (max-width : 664px) {
+
+	.square-product {
+  	height: 43.4vw;
+  	width: 43.4vw;
+	}
+
+}
+
+@media only screen and (max-width : 561px) {
+
+	.square-product {
+  	height:42.2vw;
+		width: 42.2vw;
+	}
 
 }
 
@@ -601,9 +788,65 @@ address {
     height: 33.33%;
   }
 
+	.square-product {
+		width: 41.4vw;
+		height: 41.4vw;
+	}
+
+}
+
+@media only screen and (max-width : 430px) {
+
+	.square-product {
+  	height:41.2vw;
+		width:41.2vw;
+	}
+
+}
+
+@media only screen and (max-width : 418px) {
+
+	.square-product {
+  	height:40.2vw;
+		width:40.2vw;
+	}
+
+}
+
+@media only screen and (max-width : 377px) {
+
+	.square-product {
+  	height:39.2vw;
+		width:39.2vw;
+	}
+
+}
+
+@media only screen and (max-width : 377px) {
+
+	.square-product {
+  	height:39.2vw;
+		width:39.2vw;
+	}
+
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+
+	.square-product {
+		width: 36.4vw;
+    height: 36.4vw;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 273px) {
+
+	.square-product {
+		width: 35.4vw;
+    height: 35.4vw;
+	}
 
 }
