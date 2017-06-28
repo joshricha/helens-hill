@@ -45,10 +45,11 @@
   <![endif]-->
 </head>
 
-<body>
+<body class="secondary">
   <header>
     <div class="logo">
-      <img src="img/logo.png" alt="Helen's Hill logo">
+      <img class="full-logo" src="img/logo.png" alt="Helen's Hill logo">
+      <img class="responisve-logo" src="img/logo-short.png" alt="Helen's Hill logo">
     </div><!-- logo -->
     <div class="menu-collapsed">
        <div class="bar-bg">
@@ -92,36 +93,372 @@
     <a href=""><img src="img/banner-youtube.png" alt=""></a>
   </div><!-- social -->
 
-  <div class="container section-split" id="main">
+  <div class="container section-split secondary-content" id="main">
     <div class="product-images">
-      <div class="col-md-4 col-sm-12">
-
-
+      <div class="col-sm-4 col-sm-12">
+        <img class="wide-square" src="http://via.placeholder.com/350x350" alt="">
+        <img class="thin-square" src="http://via.placeholder.com/200x200" alt="">
+        <img class="thin-square" src="http://via.placeholder.com/200x200" alt="">
       </div><!-- col 4 -->
     </div><!-- product images -->
-    <div class="product-about product-list-full">
+    <div class="product-about col-sm-8">
+      <div class="story">
+        <h2>THE STORY</h2>
+        <p>Xeriam fugia coriatiae pro con rectia dolo essit, omnihit poritium, odistor epuditatem solessunt lab id et es nonseque optatus, que nis et inciume occus dolut ipsum quas uta pliquissed est et earum ipitasp erchit andae voluptaspe eicaboria volupta et et ra volorectus acimodi vent voluptatis</p>
+        <p>Perumque et, cum venda velesequatem resequidusam atur, aut odi ipit, andandae est labores trunt, eostem fuga. Enis dolloritatus sam vendi derferc hitionseque im is evenet prem. Nam, cuscia voluptisquem, odistor epuditatem solessunt lab id et es nonseque optatus, que nis et inciume occus dolut ipsum quas uta pliq cuscit, sint inciae.</p>
+        <p>Et fuga. Nam hario. Id explianis unt ut faccus as millabor aut labore quidit ulparch illorent lab ium iumenditio. Luptia as di bea arum es que inum ipsunt, o ctur as ma qui seque si veliqui dolo ex exere necae cumquatem aut</p>
+        <p><a href="">Link here</a> if needed</p>
+      </div>
 
+      <div class="buy-form buy-display">
+        <div class="input-group">
+            <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+            <span class="">
+                <button type="button" class="quantity-left-minus btn btn-number"  data-type="minus" data-field="">
+                  <span class="glyphicon glyphicon-minus"></span>
+                </button>
+            </span>
+            <span class="">
+                <button type="button" class="quantity-right-plus btn btn-number" data-type="plus" data-field="">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </button>
+            </span>
+          <input class="add-to-cart" type="submit" value="ADD TO CART">
+          <input  class="add-case" type="submit" value="ADD A CASE (6)">
+        </div><!-- input group -->
+
+      </div><!-- buy btn -->
+
+
+      <div class="panel-group product-indo" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle bold" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  PRICING
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body white">
+              <div class="price">
+                <h3>PRICE</h3>
+
+                <table>
+                  <tr>
+                    <td>
+                      <b>1 Bottle (min. order 2)</b>
+                    </td>
+                    <td>
+                      <span class="align-right">$20.00</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>6 Bottles</b> 10% Discount
+                    </td>
+                    <td>
+                       $96.00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>12 Bottles 20%</b> Discount
+                    </td>
+                    <td>
+                       <span class="align-right">$192.00</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <b>Wine Club 25% Discount</b>
+                    </td>
+                  </tr>
+                </table>
+              </div><!-- price -->
+              <div class="shipping-offers">
+                <div class="shipping">
+                  <h3>FREE SHIPPING</h3>
+                  <p>Shipping is FREE on all orders from Helen’s Hill, it’s our way of saying thanks for buying direct from the winemaker!</p>
+                </div><!-- shipping -->
+
+                <div class="offers">
+                  <h3>SPECIAL OFFERS</h3>
+                  <p>Sign up to our newsletter here to be the first to find out about any special o ers!</p>
+                </div><!-- offers -->
+              </div><!-- shipping offers -->
+            </div>
+          </div>
+        </div><!-- acc panel -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle bold" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                THE NERDY WINE INFO
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body white">
+              <div class="vintage-intro bottom-border">
+                <h3>VINTAGE REPORT</h3>
+                <p>Nam conse peribusant laut quas estion pa nient et, consequae nobis utem verrorrum ressum derchil iditiorerum rerum faccum volestis dus as as explit utatis et aut o cti animill entium, cuptatem as doluptat ist rem ullacea rcipsum que si nus.</p>
+              </div><!-- vintage intro -->
+
+              <div class="bottom-border">
+                <h3>VITICULTURE</h3>
+                <table>
+                  <tr>
+                    <td>
+                      Varietal
+                    </td>
+                    <td class="align-right">
+                      Shiraz Viognier
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Vintage
+
+                    </td>
+                    <td class="align-right">
+                       2015
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Size
+
+                    </td>
+                    <td class="align-right">
+                       750 Ml
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Region
+                    </td>
+                    <td class="align-right">
+                       Yarra Valley
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Date Of Harvest Vine Age
+                    </td>
+                    <td class="align-right">
+                       5-15 March
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Vine Age
+                    </td>
+                    <td class="align-right">
+                       12-21 years
+                    </td>
+                  </tr>
+                </table>
+              </div><!-- border bottom -->
+              <div class="tasting-notes bottom-border">
+                <h3>TASTING NOTES</h3>
+                <p>This bold Shiraz hits the palate with power and presence. Lashings of dark fruit with notes of incense and aromatic spices, floral hints add layers and complexity. The wine rolls across the palate coating every corner of your mouth. Dense and chewy tannins compliment the fruit nicely, which tighten through the finish adding a savoury graphite note. Incredibly long and complex through the finish, this is quintessential Barossa Valley.</p>
+
+                <table>
+                  <tr>
+                    <td>
+                      Color
+                    </td>
+                    <td class="align-right">
+                      Deep Ruby
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Aroma
+
+                    </td>
+                    <td class="align-right">
+                       Black Cherry and Spices
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Palete
+
+                    </td>
+                    <td class="align-right">
+                       intense citrus + stone-fruit, long finish, piercing acidity
+                    </td>
+                  </tr>
+                </table>
+              </div><!-- tasting notes -->
+              <div class="winemaking">
+                <h3>WINEMAKING</h3>
+                <p>De-stemmed, crushed and fermented in three to ten tonne open top fermenters, with regular pump overs (three daily over peak fermentation) to extract colour, flavour and tannins. Some parcels had 20% whole bunch ferment and punchdowns.</p>
+
+                <table>
+                  <tr>
+                    <td>
+                      Alcohol
+                    </td>
+                    <td class="align-right">
+                      14.5%
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Bottle Size
+                    </td>
+                    <td class="align-right">
+                       750 Ml
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Fermentation Method
+                    </td>
+                    <td class="align-right">
+                       80% Open, 20% Rotary
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Time In Barrel
+                    </td>
+                    <td class="align-right">
+                       11 Months
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Yeast Type
+                    </td>
+                    <td class="align-right">
+                       Wet Cultured
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Barrel Origin &amp; Size
+                    </td>
+                    <td class="align-right">
+                       French 225L
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Skin Contact Time
+                    </td>
+                    <td class="align-right">
+                       14 Days
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Fermentation Time
+                    </td>
+                    <td class="align-right">
+                       14 days
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      MLF
+                    </td>
+                    <td class="align-right">
+                       100%
+                    </td>
+                  </tr>
+                </table>
+                <a class="border-btn" href="">DOWNLOAD WINE NOTES <span class="float-right">></span></a>
+              </div><!-- winemaking -->
+            </div>
+          </div>
+        </div><!-- acc panel -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle bold" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                WINE CLUB
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body white">
+              Lorem
+            </div>
+          </div>
+        </div><!-- acc panel -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle bold" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                REVIEWS
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse">
+            <div class="panel-body white">
+              <div class="review bottom-border">
+                <h3>TITLE</h3>
+                <p>James Halliday – October 2016 <br>
+                Deep purple-crimson; destemmed and crushed to small open top stainless steel pots for co- fermentation with 1.24% [...]</p>
+                <a href=""><b>Read More</b></a>
+              </div>
+              <div class="review bottom-border">
+                <h3>TITLE</h3>
+                <p>James Halliday – October 2016 <br>
+                Deep purple-crimson; destemmed and crushed to small open top stainless steel pots for co- fermentation with 1.24% [...]</p>
+                <a href=""><b>Read More</b></a>
+              </div>
+              <div class="review">
+                <h3>TITLE</h3>
+                <p>James Halliday – October 2016 <br>
+                Deep purple-crimson; destemmed and crushed to small open top stainless steel pots for co- fermentation with 1.24% [...]</p>
+                <a href=""><b>Read More</b></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- acc panel -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle last bold" data-toggle="collapse" data-parent="#accordion" href="#collapseFiv">
+                DOWNLOAD NOW
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse">
+            <div class="panel-body white">
+              Lorem
+            </div>
+          </div>
+        </div><!-- acc panel -->
+
+
+      </div><!-- accordin -->
     </div><!-- product about -->
   </div><!-- container -->
 
   <footer>
     <div class="container">
-      <div class="col-md-3">
+      <div class="col-sm-3">
         <a href="">The Cellar Door</a><br>
         <a href="">The Bottleshop</a><br>
         <a href="">The Wine Club</a>
       </div><!-- col3 -->
-      <div class="col-md-3">
+      <div class="col-sm-3">
         <a href="">Stockists</a><br>
         <a href="">News From The Hill </a><br>
         <a href="">The Helen’s Hill Story Contact</a><br>
         <a href="">The Restaurant</a>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3">
         <a href="">Shopping Cart</a><br>
         <a href="">Login</a>
       </div><!-- col3 -->
-      <div class="col-md-3">
+      <div class="col-sm-3">
         <h3>CONTACT</h3>
         <a href="tel:+61 3 9739 1573">+61 3 9739 1573</a><br>
         <a href="mailto:info@helenshill.com.au">info@helenshill.com.au</a><br>
@@ -134,7 +471,7 @@
         <a href=""><img src="img/youtube.png" alt=""></a>
         <a href=""><img src="img/email.png" alt=""></a>
       </div><!-- col3 -->
-      <div class="col-md-3">
+      <div class="col-sm-3">
 
       </div><!-- col3 -->
     </div><!-- container -->

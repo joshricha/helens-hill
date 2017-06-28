@@ -1,6 +1,18 @@
 $(".menu-collapsed").click(function() {
   $(this).toggleClass("menu-expanded");
-  $(".menu-text").toggleClass("menu-text-collapsed ");
+  $(".menu-text").toggleClass("menu-text-collapsed");
+});
+
+$("a.search-btn").click(function(e) {
+  e.preventDefault();
+  $(".search-bar-hidden").toggleClass("search-bar-expanded");
+  $(".search-bar-hidden").removeClass("search-bar-hidden");
+});
+
+$("a.close-btn").click(function(e) {
+  e.preventDefault();
+  $(".search-bar-expanded").toggleClass("search-bar-hidden");
+  $(".search-bar-expanded").removeClass("search-bar-expanded");
 });
 
 $("a#buy-btn").click(function(e) {
